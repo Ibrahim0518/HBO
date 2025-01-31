@@ -3,23 +3,23 @@
         background-color: rgb(0, 178, 238);
     } */
 
-    .wd_100
-    {
-        width:100% !important;
+    .wd_100 {
+        width: 100% !important;
     }
 
-    .next_Movie
-    {
-        flex-wrap:wrap !important;
-    }
-    .next_Movie_Content
-    {
-        padding:0rem 1rem !important;
+    .next_Movie {
+        flex-wrap: wrap !important;
     }
 
-    .next_movie_img
-    {
-        max-width:100% !important;
+    .next_Movie_Content {
+        padding: 0rem 2rem !important;
+    }
+
+    .next_movie_img {
+        max-width: 100% !important;
+    }
+    .Section_3>.Container>div:nth-child(2)>div {
+        width: 100% !important;
     }
 }
 
@@ -146,16 +146,18 @@
     }
 
     .sec1_subContainer_childContainer {
-        padding: 0rem 1rem;
+        padding: 0rem 0rem;
     }
 
     .sec1_subContainer_childContainer>h3 {
-        color: black;
+        color: rgb(32, 32, 32);
         font-size: 14px;
+        text-align: center !important;
     }
 
     .sec1_subContainer_childContainer>h1 {
-        color: black;
+        color: rgb(32, 32, 32);
+        text-align: center !important;
     }
 
     .sec1_subContainer_childContainer>h4 {
@@ -174,14 +176,45 @@
     .card {
         flex: 0 0 200px !important;
     }
+
+    .sec1_subContainer {
+        padding: 0rem !important;
+    }
+
+
+
+    .Section_3>.Container>div {
+        width: 95% !important;
+    }
+
+    .Section_3>.Container>div:nth-child(2) {
+        display: flex;
+        align-items: baseline;
+    }
+
+    .section6>.Container {
+        padding: 5.4% !important;
+    }
+    .section6>.Container>small {
+        margin: 3%;
+    }
+
+    .section6>.Container>img {
+        width: 41%;
+        padding: 2%;
+    }
+    .section6>.Container>a {
+        border-radius: 2px !important;
+        font-weight: 600;
+        margin: 5%;
+    }
+    .section_2>div:nth-child(2)>div:nth-child(odd)
+    {
+        display:none;
+    }
 }
 
-
 @media only screen and (max-width: 882px) {
-    /* body{
-        background:yellow;
-    } */
-
     .Section_3 {
         background: blue;
         color: white;
@@ -208,6 +241,10 @@
         order: 3;
     }
 
+    .section_4 {
+        padding: 0rem;
+    }
+
     .section_4>.Container {
         flex-direction: column;
         justify-content: center;
@@ -216,10 +253,12 @@
 
     .section_4>.Container>div:nth-child(1) {
         order: 2;
+        width: 100% !important;
     }
 
     .section_4>.Container>div:nth-child(2) {
         order: 1;
+        width: 100% !important;
     }
 
     .section_4>.Container>div:nth-child(2)>h2 {
@@ -236,6 +275,8 @@
         border-radius: 2px;
         width: 100%;
         text-align: center;
+        display: block;
+        width: auto;
     }
 
     .section_4>.Container>div:nth-child(1) {
@@ -244,31 +285,52 @@
 
     .section_2>div:nth-child(2)>div:nth-child(even) {
         width: 90%;
-        display:flex;
-        overflow-x:auto;
-        gap:1rem;
-        padding:1rem;
+        display: flex;
+        overflow-x: auto;
+        gap: 1rem;
+        padding: 1rem;
         scroll-behavior: smooth;
     }
 
-    .section_2>div:nth-child(2)>div:nth-child(even)::-webkit-scrollbar{
-        display:none;
+    .section_2>div:nth-child(2)>div:nth-child(even)::-webkit-scrollbar {
+        display: none;
     }
-    .card{
-        /* max-width: 300px;
-    overflow: hidden;
-    margin: 1rem;
-    height: 370px; */        
-    }
-    .Section_3>.Container>div:nth-child(1),.Section_3>.Container>div:nth-child(3) {
+
+    .Section_3>.Container>div:nth-child(3) {
         border-bottom: none !important;
+        border-top: 1px solid black !important;
     }
+
+    .section_5>.Container>div:nth-child(1) {
+        padding: 12%;
+    }
+
+    footer>.Container>div:nth-child(2) {
+        margin: 9.9px !important;
+        display: flex !important;
+        text-align: center !important;
+        justify-content: center !important;
+        flex-wrap: wrap !important;
 }
 
+.link_white {
+    color: #e8dddd !important;
+    font-size: 1rem !important;
+    margin: 2% !important;
+    display: block;
+}
 
-@media only screen and (max-width: 480px)
-{
-    .card{
-        flex:0 0 200px;
+.link_white_sm{
+    color: #e8dddd !important;
+}
+
+.clr_White {
+    color: #e8dddd !important;
+}
+}
+
+@media only screen and (max-width: 480px) {
+    .card {
+        flex: 0 0 200px;
     }
 }
