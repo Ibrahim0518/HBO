@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-size: 14px;
+    font-family: sans-serif;
+    color: black;
+}
+
+@font-face {
+    font-family: hbo;
+    src: url("/fonts/DHannaSoft-Thin.ttf");
+}
+
+:root {
+    --btn-Blue_Bg--: #002be7;
+    --btn-Sky_Bg--: #2bb0d8;
+    --btn-signUp_bg--: #f8f9fa;
+    --footer-bg--: #404040;
+}
+
+.flx {
+    display: flex;
+    align-items: center;
+
+}
+
+.pd{
+    padding: 4.5%;
+}
+.txt_center{
+    text-align: center;
+}
+.small_font {
+    font-size: 14px;
+}
+
+.big_font {
+    font-size: 2.2rem;
+}
+
+.gray{
+    color:var(--footer-bg--);
+}
+.max_icon {
+    width : 3.8rem;
+    position: relative;
+    top: 2px;
+}
+
+li {
+    margin: 1rem;
+}
+
+.navi_btn{
+    display:none;
+}
+
+#navi_btn
+{
+    display:none;
+}
+.display_none
+{
+    display: none;
+}
+.Container {
+    max-width: 1166px;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    overflow: hidden;
+}
+
+header {
+    height: 62px;
+    position: sticky;
+    top: 0;
+    z-index: 4;
+    background: white;
+}
+
+.logo {
+    width: 4.9rem;
+    margin: 5%;
+}
+
+.Logo_Container {
+    flex-grow: 0.6;
+    align-content: center;
+    text-align: center;
+    display:flex;
+}
+
+.Navigation {
+    flex-grow: 2;
+    background:white;
+}
+
+.sign_Container {
+    flex-grow: 1;
+    justify-content: space-evenly;
+}
+
+.sign_Container>div:nth-child(1) {
+    margin: 10px;
+}
+
+.sign_btn {
+    text-align: center;
+    align-content: center;
+    background: blue;
+    color: white;
+    min-width: 12rem;
+    min-height: 3rem;
+}
+
+.sign_link {
+    width: 100%;
+    height: 100%;
+    color: white;
+    font-weight: bolder;
+}
+
+.signup_btn {
+    width: 66.83px;
+    height: 38.5px;
+    text-align: center;
+    align-content: center;
+    font-weight: bolder;
+}
+
+.rel {
+    position: relative;
+}
+
+.sub_container {
+    position: absolute;
+    /* border: 1px solid gray;s */
+    transition: transform 0.3s ease;
+    height: 0%;
+    overflow: hidden;
+}
+
+
+.sub_menu_option {
+    display: block;
+    border-bottom: 1px solid black;
+    padding: 1rem 2.5rem;
+}
+
+
+.dropdown-arrow {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    margin-left: 5px;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+    transform: rotate(45deg);
+    transition: transform 0.3s ease;
+}
+
+#icons
+{
+    display:none;
+}
+#icons:checked~label>#change {
+    transform: rotate(220deg);
+}
+
+#icons:checked~div {
+    height: max-content;
+    background: white;
+    box-shadow: 1px 3px 4px gray;
+}
+
+
+/* Changes */
+
+#navi_btn
+{
+    display:none;
+}
+
+.navi_btn
+{
+    display:none;
+}

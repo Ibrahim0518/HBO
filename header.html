@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="MediaQuery.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="section.css">
+</head>
+
+<body>
+    <header class="">
+        <div class="Container">
+            <div class="Logo_Container">
+                <input type="checkbox" name="navi_btn" id="navi_btn">
+                <label for="navi_btn" class="navi_btn"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="30" height="30" viewBox="0 0 50 50">
+                        <path
+                            d="M 5 9 L 5 11 L 45 11 L 45 9 L 5 9 z M 5 24 L 5 26 L 45 26 L 45 24 L 5 24 z M 5 39 L 5 41 L 45 41 L 45 39 L 5 39 z">
+                        </path>
+                    </svg></label>
+                <img src="/SVG/hbo-logo-blk.svg" alt="" class="logo">
+            </div>
+            <div class="flx Navigation flex_1" id="nav_bar">
+                <ul class="flx">
+                    <li class=""><a href="" class="">SERIES</a></li>
+                    <li class=""><a href="" class="">MOVIES</a></li>
+                    <li class=""><a href="" class="">NEWS & LAST CHANCE</a></li>
+                    <li class=""><a href="" class="">SCHEDULE</a></li>
+                    <li class=""><a href="" class="">FREE EPISODES</a></li>
+                    <li class="rel">
+                        <input type="checkbox" name="icons" id="icons">
+                        <label for="icons" class="D_none">MORE<span class="dropdown-arrow" id="change"></span></label>
+                        <div class="sub_container">
+                            <a href="" class="sub_menu_option">DOCUMENTARIES</a>
+                            <a href="" class="sub_menu_option">SPECIALS</a>
+                            <a href="" class="sub_menu_option">SPORTS</a>
+                            <a href="" class="sub_menu_option">PODCASTS</a>
+                            <a href="" class="sub_menu_option">MAX</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                let Navigation = document.getElementsByClassName("Navigation");
+                var navi_btn = document.getElementById("navi_btn");
+                let navi_btn1 = document.getElementsByClassName("navi_btn");
+                let nav_bar = document.getElementById("nav_bar");
+                if (window.innerWidth < 1200) {
+                    Navigation[0].style.alignItems = "baseline";
+                    navi_btn1[0].style.display = "inline";
+                }
+                let b = navi_btn.isConnected;
+                console.log(b);
+
+                navi_btn1[0].addEventListener("click", () => {
+                    if (navi_btn.checked) {
+                        console.log("checked");
+                        Navigation[0].style.height = "100%";
+                    }
+                    else {
+                        console.log("Not checked");
+                        Navigation[0].style.height = "0%";
+                    }
+                })
+
+
+
+            </script>
+            <div class="flx sign_Container flow_right">
+                <div class="flx">
+                    <a href=""><b class="signup_btn small_font">SIGN IN</b></a>
+                </div>
+                <div class="flx sign_btn">
+                    <a href="" class="sign_link">SIGN UP FOR <img src="/SVG/download (1).svg" class="max_icon"
+                            alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="section_1">
+            <div class="Container">
+                <!-- <a href="" class=""></a>
+                <div class="sec1_subContainer">
+                    <div class="sec1_subContainer_childContainer">
+                        <h3 class="col_White">AVAILABLE NOW</h3>
+                        <h1 class="col_White"><b>Dune: Prophecy</b></h1>
+                        <h4 class="col_White">Ten thousand years before Paul Atreides — before they became the Bene
+                            Gesserit — a
+                            powerful
+                            sisterhood works in the shadows to guide the universe.</h4>
+                        <div class="">
+                            <a name="" id="" class=" btn btn-primary" href="#" role="button">WATCH THE TRAILER</a>
+                            <a name="" id="" class=" btn btn-primary" href="#" role="button">FIND OUT MORE</a>
+                        </div>
+                    </div>
+                </div>s -->
+            </div>
+        </section>
+    </main>
+</body>
+
+</html>

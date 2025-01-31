@@ -1,0 +1,274 @@
+@media only screen and (max-width: 600px) {
+    /* body {
+        background-color: rgb(0, 178, 238);
+    } */
+
+    .wd_100
+    {
+        width:100% !important;
+    }
+
+    .next_Movie
+    {
+        flex-wrap:wrap !important;
+    }
+    .next_Movie_Content
+    {
+        padding:0rem 1rem !important;
+    }
+
+    .next_movie_img
+    {
+        max-width:100% !important;
+    }
+}
+
+@media only screen and (max-width: 1199px) {
+
+    .flex_1 {
+        display: flex;
+    }
+
+    .Logo_Container {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+    }
+
+    .sub_container {
+        position: relative;
+        transition: transform 0.3s ease;
+        width: 98%;
+    }
+
+    /* body {
+        background-color: rgb(165, 209, 223);
+    } */
+
+    .Navigation {
+        position: absolute;
+        top: 57px;
+        width: 100%;
+        background: white;
+        height: 0%;
+        overflow: hidden;
+        align-items: baseline !important;
+        transition: 0.5s all ease-in-out;
+    }
+
+    .Navigation>ul {
+        flex-direction: column;
+        align-items: baseline;
+        width: 100%;
+
+    }
+
+    .Navigation>ul>li {
+        width: 98%;
+        border: none;
+        margin: 0rem;
+    }
+
+    .Navigation>ul>li>a {
+        display: block;
+        padding: 1rem 0rem;
+        border-bottom: 1px solid black;
+    }
+
+    header>.Container>.flow_right {
+        justify-content: end;
+        padding: 0 1rem 0 0;
+    }
+
+    .D_none {
+        display: none;
+    }
+
+    .sub_container {
+        width: 100%;
+        height: fit-content;
+        background: white;
+        position: relative;
+        top: 0;
+        overflow: visible;
+    }
+
+    .sub_menu_option {
+        display: block;
+        padding: 1rem 0rem;
+    }
+
+    /* Changes */
+
+    .navi_btn {
+        display: inline !important;
+        margin: 1rem;
+    }
+
+    /* -------- */
+
+    #icons:not(:checked)~div {
+        height: fit-content;
+        position: relative;
+    }
+
+    #icons:not(:checked)~div>.sub_menu_option {
+        padding: 1rem 0rem;
+    }
+
+}
+
+
+/* MEDIAqUERY 992 */
+
+/* movie banner */
+
+
+/* MediaQuery 767 */
+
+@media only screen and (max-width: 767px) {
+    /* body {
+        background-color: bisque;
+    } */
+
+    .section_1 {
+        display: grid;
+        background: none !important;
+    }
+
+    .section_1>.Container {
+        display: block !important;
+    }
+
+    .section_1>.Container>a {
+        Content: url(images/dune-prophecy-s1-main-ka-2000x700.jpeg) !important;
+        width: 100vw !important;
+    }
+
+    .sec1_subContainer_childContainer {
+        padding: 0rem 1rem;
+    }
+
+    .sec1_subContainer_childContainer>h3 {
+        color: black;
+        font-size: 14px;
+    }
+
+    .sec1_subContainer_childContainer>h1 {
+        color: black;
+    }
+
+    .sec1_subContainer_childContainer>h4 {
+        color: black;
+        line-height: 1.6;
+    }
+
+    .sec1_subContainer_childContainer>div>a {
+        display: block;
+        padding: 0.2rem 1.3rem !important;
+        text-align: center;
+    }
+
+    /* section_2 */
+
+    .card {
+        flex: 0 0 200px !important;
+    }
+}
+
+
+@media only screen and (max-width: 882px) {
+    /* body{
+        background:yellow;
+    } */
+
+    .Section_3 {
+        background: blue;
+        color: white;
+    }
+
+    .Section_3>.Container {
+        flex-direction: column;
+    }
+
+    .Section_3>.Container>div:nth-child(1) {
+        order: 1;
+    }
+
+    .Section_3>.Container>div:nth-child(2) {
+        order: 2 !important;
+        flex-direction: column;
+    }
+
+    .Section_3>.Container>div:nth-child(2)>div {
+        width: 50%;
+    }
+
+    .Section_3>.Container>div:nth-child(3) {
+        order: 3;
+    }
+
+    .section_4>.Container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section_4>.Container>div:nth-child(1) {
+        order: 2;
+    }
+
+    .section_4>.Container>div:nth-child(2) {
+        order: 1;
+    }
+
+    .section_4>.Container>div:nth-child(2)>h2 {
+        display: block;
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+    }
+
+    .sec4_div2>a {
+        margin: 1.5rem;
+        padding: 9% 10.5%;
+        background: white;
+        border-radius: 2px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .section_4>.Container>div:nth-child(1) {
+        width: 100%;
+    }
+
+    .section_2>div:nth-child(2)>div:nth-child(even) {
+        width: 90%;
+        display:flex;
+        overflow-x:auto;
+        gap:1rem;
+        padding:1rem;
+        scroll-behavior: smooth;
+    }
+
+    .section_2>div:nth-child(2)>div:nth-child(even)::-webkit-scrollbar{
+        display:none;
+    }
+    .card{
+        /* max-width: 300px;
+    overflow: hidden;
+    margin: 1rem;
+    height: 370px; */        
+    }
+    .Section_3>.Container>div:nth-child(1),.Section_3>.Container>div:nth-child(3) {
+        border-bottom: none !important;
+    }
+}
+
+
+@media only screen and (max-width: 480px)
+{
+    .card{
+        flex:0 0 200px;
+    }
+}

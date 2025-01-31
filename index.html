@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="MediaQuery.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="section.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="">
+        <div class="Container">
+            <div class="Logo_Container">
+                <input type="checkbox" name="navi_btn" id="navi_btn">
+                <label for="navi_btn" class="navi_btn"><svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px"
+                        width="30" height="30" viewBox="0 0 50 50">
+                        <path
+                            d="M 5 9 L 5 11 L 45 11 L 45 9 L 5 9 z M 5 24 L 5 26 L 45 26 L 45 24 L 5 24 z M 5 39 L 5 41 L 45 41 L 45 39 L 5 39 z">
+                        </path>
+                    </svg></label>
+                <img src="/SVG/hbo-logo-blk.svg" alt="" class="logo">
+            </div>
+            <div class="flx Navigation flex_1" id="nav_bar">
+                <ul class="flx">
+                    <li class=""><a href="" class="ft_thine">SERIES</a></li>
+                    <li class=""><a href="" class="ft_thine">MOVIES</a></li>
+                    <li class=""><a href="" class="ft_thine">NEWS & LAST CHANCE</a></li>
+                    <li class=""><a href="" class="ft_thine">SCHEDULE</a></li>
+                    <li class=""><a href="" class="ft_thine">FREE EPISODES</a></li>
+                    <li class="rel">
+                        <input type="checkbox" name="icons" id="icons">
+                        <label for="icons" class="D_none">MORE<span class="dropdown-arrow" id="change"></span></label>
+                        <div class="sub_container">
+                            <a href="" class="sub_menu_option">DOCUMENTARIES</a>
+                            <a href="" class="sub_menu_option">SPECIALS</a>
+                            <a href="" class="sub_menu_option">SPORTS</a>
+                            <a href="" class="sub_menu_option">PODCASTS</a>
+                            <a href="" class="sub_menu_option">MAX</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <script>
+                let Navigation = document.getElementsByClassName("Navigation");
+                var navi_btn = document.getElementById("navi_btn");
+                let navi_btn1 = document.getElementsByClassName("navi_btn");
+                let nav_bar = document.getElementById("nav_bar");
+                if (window.innerWidth < 1200) {
+                    Navigation[0].style.alignItems = "baseline";
+                    navi_btn1[0].style.display = "inline";
+                }
+                let b = navi_btn.isConnected;
+                console.log(b);
+
+                navi_btn1[0].addEventListener("click", () => {
+                    if (navi_btn.checked) {
+                        console.log("checked");
+                        Navigation[0].style.height = "100vh";
+                    }
+                    else {
+                        console.log("Not checked");
+                        Navigation[0].style.height = "0%";
+                    }
+                })
+
+
+
+            </script>
+            <div class="flx sign_Container flow_right">
+                <div class="flx">
+                    <a href="" class="signup_btn">SIGN IN</a>
+                </div>
+                <div class="flx sign_btn">
+                    <a href="" class="sign_link">SIGN UP FOR <img src="/SVG/download (1).svg" class="max_icon"
+                            alt=""></a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <section class="section_1">
+            <div class="Container">
+                <a href="" class="">
+                </a>
+
+                <div class="sec1_subContainer">
+                    <div class="sec1_subContainer_childContainer">
+                        <h3 class="col_White">AVAILABLE NOW</h3>
+                        <h1 class="col_White Font_gb">Dune: Prophecy</h1>
+                        <h4 class="col_White">Ten thousand years before Paul Atreides — before they became the Bene
+                            Gesserit — a
+                            powerful
+                            sisterhood works in the shadows to guide the universe.</h4>
+                        <div class="">
+                            <a name="" id="" class=" btn btn-primary" href="#" role="button"><span
+                                    class="triangle-right-white"></span>WATCH THE TRAILER</a>
+                            <a name="" id="" class=" btn btn-primary" href="#" role="button">FIND OUT MORE</a>
+                        </div>
+                    </div>
+                </div>
+        </section>
+
+        <section class="section_2">
+            <div class="txt_center pd">
+                <h3 class="big_font gray">Stream the Latest</h3>
+            </div>
+            <div class="flx">
+                <div>
+                    <span class="big_left-arrow"></span>
+                </div>
+                <div class="card_Container">
+                    <div class="card">
+                        <a href="">
+                            <div class="card_img_Con">
+                                <img src="images/the-franchise-s1-ka-1920.jpeg" alt="" class="card_img">
+                            </div>
+                            <div class="card_content">
+                                <small>AVAILABLE NOW</small>
+                                <h4>The Franchise</h4>
+                                <p>
+                                    The Franchise follow the crew of an unloved franchise movie frighting
+                                    for their place in a savage and unruly cinematic universe.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="card">
+                        <a href="">
+                            <div class="card_img_Con">
+                                <img src="images/money-electric-the-bitcoin-mystery-ka-1920.jpeg" alt=""
+                                    class="card_img">
+                            </div>
+                            <div class="card_content">
+                                <small>AVAILABLE NOW</small>
+                                <h4>Money Electric: The Bitcoin Mystery</h4>
+                                <p>
+                                    The Documentaries films offer a thrilling. globe-spanning, investigation with hoback
+                                    immersing
+                                    himself with key player uncovering never before-seen clues and humorosly
+                                    unraveling bitcoins meteoric rise.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="">
+                            <div class="card_img_Con">
+                                <img src="images/the-penguin-s1-version-C-ka-1920.jpeg" alt="" class="card_img">
+                            </div>
+                            <div class="card_content">
+                                <small>AVAILABLE NOW</small>
+                                <h4>The Penguin</h4>
+                                <p>
+                                    Starring Colin Farrell. this HBO Original Limited series Continues the epic
+                                    crime sage maft Reeves began with the Batman
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="">
+                            <div class="card_img_Con">
+                                <img src="images/my-brilliant-friend-s4-ka-1920.jpeg" alt="" class="card_img">
+                            </div>
+                            <div class="card_content">
+                                <small>AVAILABLE NOW</small>
+                                <h4>The Franchise</h4>
+                                <p>
+                                    The Franchise follow the crew of an unloved franchise movie frighting
+                                    for their place in a savage and unruly cinematic universe.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="">
+                            <div class="card_img_Con">
+                                <img src="images/the-franchise-s1-ka-1920.jpeg" alt="" class="card_img">
+                            </div>
+                            <div class="card_content">
+                                <small>AVAILABLE NOW</small>
+                                <h4>The Franchise</h4>
+                                <p>
+                                    The Franchise follow the crew of an unloved franchise movie frighting
+                                    for their place in a savage and unruly cinematic universe.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="">
+                            <div class="card_img_Con">
+                                <img src="images/the-franchise-s1-ka-1920.jpeg" alt="" class="card_img">
+                            </div>
+                            <div class="card_content">
+                                <small>AVAILABLE NOW</small>
+                                <h4>The Franchise</h4>
+                                <p>
+                                    The Franchise follow the crew of an unloved franchise movie frighting
+                                    for their place in a savage and unruly cinematic universe.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="">
+                            <div class="card_img_Con">
+                                <img src="images/the-franchise-s1-ka-1920.jpeg" alt="" class="card_img">
+                            </div>
+                            <div class="card_content">
+                                <small>AVAILABLE NOW</small>
+                                <h4>The Franchise</h4>
+                                <p>
+                                    The Franchise follow the crew of an unloved franchise movie frighting
+                                    for their place in a savage and unruly cinematic universe.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="card">
+                        <a href="">
+                            <div class="card_img_Con">
+                                <img src="images/the-franchise-s1-ka-1920.jpeg" alt="" class="card_img">
+                            </div>
+                            <div class="card_content">
+                                <small>AVAILABLE NOW</small>
+                                <h4>The Franchise</h4>
+                                <p>
+                                    The Franchise follow the crew of an unloved franchise movie frighting
+                                    for their place in a savage and unruly cinematic universe.
+                                </p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div><span class="big_right-arrow"></span></div>
+            </div>
+        </section>
+        <section class="Section_3">
+            <div class="Container flx">
+                <div class="">
+                    <h4 class="ft_13">Tonight on HBO</h4>
+                </div>
+                <div class="flx">
+                    <div class="lt-border">
+                        <pre>
+                            <a href=""><b>Godzilla x Kong: The New Empire</b></a>
+                            <span>8:00 PM PST</span>
+                        </pre>
+                    </div>
+                    <div class="lt-border">
+                        <pre>
+                            <a href=""><b>Real Time with Bill Maher - S23:E2 - January 24, 2025</b></a>
+                            <span>10:00 PM PST</span>
+                        </pre>
+                    </div>
+                    <div class="lt-border">
+                        <pre>
+                            <a href=""><b>Real Time with Bill Maher - S23:E2 - January 24,</b></a>
+                            <span>11:00 PM PST</span>
+                        </pre>
+                    </div>
+                </div>
+                <div class="flx">
+                    <a href="" class="flx udline">
+                        <h3>
+                            SEE FULL SCHEDULE
+                        </h3>
+                        <span class="right-small-arrow">
+                        </span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_4">
+            <div class="Container">
+                <div class="">
+                    <img src="/images/house-of-the-dragon-mid-season-2.jpeg" alt="" class="movies_banner">
+                    <img src="/images/sporanos-max-banner-vanilla-2x3.jpeg" alt="" class="movies_banner">
+                    <img src="/images/TheLastofUs_2560x3840-c.jpeg" alt="" class="movies_banner">
+                </div>
+                <div class="sec4_div2">
+                    <img src="/SVG/download (1).svg" alt="" class="max_logo">
+                    <h2>it's All Here</h2>
+                    <a href="" class="bg-white-btn">SIGN UP NOW</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="section_5">
+            <div class="Container">
+                <div class="pd txt_center">
+                    <h3 class="big_font gray">Coming Soon to HBO</h3>
+                </div>
+                <div class="flex_1 next_Movie">
+                    <div class="wd_50 wd_100">
+                        <img src="/images/nextMovie.jpeg" alt="" class="next_movie_img">
+                    </div>
+                    <div class="wd_50 wd_100">
+                        <div class="next_Movie_Content">
+                            <small class="dp_block">COMING SOON</small><br>
+                            <b class="dp_block ft_1_3">A Knight of the Seven Kingdoms: The Hedge Knight</b><br>
+                            <p class="small">A century before the events of Game of Thrones, there was Ser Duncan the
+                                Tall and his squire,
+                                Egg.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="section6 rel">
+            <div class="Container txt_center">
+                <img src="/SVG/download (1).svg" alt="" class="max_logo">
+                <small>Stream all of HBO, plus hit series, movies, reality, and more.</small>
+                <a href="" class="bg-white-btn">SIGN UP NOW</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="Container">
+            <div class="txt_center">
+                <img src="/SVG/hbo-logo-footer.svg" alt="" class="logo mg-1">
+            </div>
+            <div class="txt_center">
+                <a href="" class="link_white">ABOUT</a>
+                <a href="" class="link_white">GET HBO</a>
+                <a href="" class="link_white">HELP</a>
+                <a href="" class="link_white">SHOP</a>
+                <a href="" class="link_white">CAREER</a>
+                <a href="" class="link_white">HBO INSPIRES</a>
+                <a href="" class="link_white">HOW TO WATCH MAX</a>
+            </div>
+            <div class="txt_center">
+                <a href="" class="link_white_sm">Privacy Policy</a>
+                <a href="" class="link_white_sm">Terms of Use</a>
+                <a href="" class="link_white_sm">Ad Choices</a>
+                <a href="" class="link_white_sm">Cookies Setting</a>
+            </div>
+            <div class="txt_center">
+                <address class="clr_White">© 2024 Home Box Office, Inc. All Rights Reserved.
+                    This website may contain mature content.</address>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
