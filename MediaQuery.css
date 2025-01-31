@@ -60,7 +60,7 @@
         flex-direction: column;
         align-items: baseline;
         width: 100%;
-
+        padding: 1.5%;
     }
 
     .Navigation>ul>li {
@@ -146,7 +146,7 @@
     }
 
     .sec1_subContainer_childContainer {
-        padding: 0rem 0rem;
+        padding: 0rem 1% !important;
     }
 
     .sec1_subContainer_childContainer>h3 {
